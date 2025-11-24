@@ -64,10 +64,10 @@ class TwoLayerNet(object):
         # 偏置b2：(C,)       
         ############################################################################
         # W∼N(0,σ^2)  σ=weight_scale
-        #W1.shape = (input_dim,hidden_dim)
-        #b1.shape = (hidden_dim)
-        #W2.shape = (hidden_dim,num_classes)
-        #b2.shape = (num_classes)
+        # W1.shape = (input_dim,hidden_dim)
+        # b1.shape = (hidden_dim)
+        # W2.shape = (hidden_dim,num_classes)
+        # b2.shape = (num_classes)
 
         self.params['W1'] = np.random.randn(input_dim,hidden_dim) * weight_scale
         self.params['b1'] = np.zeros(hidden_dim)
