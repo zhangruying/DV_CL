@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook  
+.ipynb_checkpoints/
+*.ipynb
+
+# Data (CS231n datasets - CRITICAL!)
+datasets/
+*.pkl
+*.h5
+*.hdf5
+*.npz
+
+# Models
+models/
+*.pth
+*.pkl
+*.npy
+*.pt
+
+# Logs & IDE
+logs/
+.vscode/
+.idea/
+*.log
+
+# Large files that might break notebooks
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo

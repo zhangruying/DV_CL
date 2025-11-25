@@ -194,7 +194,9 @@ def slice_indexing_practice(x: Tensor) -> Tuple[Tensor, Tensor, Tensor, Tensor]:
     last_row = x[-1,:]
     third_col = x[:,2:3]
     first_two_rows_three_cols = x[:2,:3]
-    even_rows_odd_cols = x[1::2,::2]###jishu index = oushu ######
+    even_rows = x[::2, :]           # 选择所有偶数行
+    odd_cols = even_rows[:, 1::2]   # 选择这些行的奇数列  
+    even_rows_add_cols = odd_cols.sum(dim=1, keepdim=True)  # 对每行的奇数列求和
     ##########################################################################
     #                            END OF YOUR CODE                            #
     ##########################################################################
